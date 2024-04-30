@@ -141,8 +141,35 @@ header{
     display: none;
 }
 
-
 /* ---------------- LECTURE 영역 ---------------- */
+
+.boeun{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    background: linear-gradient(135deg, #33cd5f, #38d1b3);
+}
+
+.boeun > p{
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.boeun > a{
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #33cd5f;
+    background-color: var(--color-white);
+    padding: 12px 20px;
+    border-radius: 48px;
+}
 
 .lecture{
     width: 100%;
@@ -667,6 +694,22 @@ footer{
 
     /* ---------------- LECTURE 영역 ---------------- */
 
+    .boeun{
+        padding: 24px;
+        border-radius: 6px;
+        margin-bottom: 60px;
+    }
+    
+    .boeun > p{
+        font-size: 18px;
+    }
+    
+    .boeun > a{
+        font-size: 15px;
+        padding: 12px 16px;
+        border-radius: 48px;
+    }
+
     .lecture{
         padding: 120px 0px;
         margin-top: 72px;
@@ -882,6 +925,24 @@ footer{
     }
 
     /* ---------------- LECTURE 영역 ---------------- */
+
+    .boeun{
+        flex-direction: column;
+        padding: 24px 16px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+    }
+    
+    .boeun > p{
+        font-size: 18px;
+    }
+    
+    .boeun > a{
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 48px;
+        margin-top: 16px;
+    }
 
     .lecture{
         padding: 80px 0px;
