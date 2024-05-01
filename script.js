@@ -3,3 +3,8 @@ AOS.init({
     once: true,
     anchorPlacement: "top-center",
 });
+
+
+function goHome(){
+    location.href="/";
+}
