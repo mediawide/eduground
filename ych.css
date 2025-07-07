@@ -244,8 +244,8 @@ footer{
 }
 
 .logo > img{
-    width: 115px;
     height: 32px;
+    object-fit: contain;
 }
 
 .footer-wrapper > p{
@@ -295,6 +295,10 @@ footer{
 
 .footer-wrapper{
     padding: 0 var(--size-xs);
+}
+
+    .logo > img{
+    height: 24px;
 }
 
 
