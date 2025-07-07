@@ -298,9 +298,11 @@ footer{
 }
 
     .logo > img{
-    height: 24px;
+    height: 28px;
 }
-
+.footer-wrapper > p{
+    margin-top: 14px;
+}
 
 
 }
