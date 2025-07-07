@@ -224,13 +224,16 @@ const lecturesData = [
 
  const lecturesContainer = document.querySelector('.lectures');
 
-    lecturesData.forEach(data => {
+lecturesData.forEach((data, index) => {
     const lecture = document.createElement('div');
     lecture.className = 'lecture';
 
+    // 번호 포맷 (01, 02, ..., 10, 11 ...)
+    const num = String(index + 1).padStart(2, '0');
+
     lecture.innerHTML = `
         <div class="lecture-title">
-        <h2 class="title">${data.title}</h2>
+        <h2 class="title"><span>${num}</span> ${data.title}</h2>
         <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M5 8L12 16L19 8" stroke="currentColor" stroke-width="2"/>
@@ -249,8 +252,7 @@ const lecturesData = [
     `;
 
     lecturesContainer.appendChild(lecture);
-
-    });
+});
 
         
     // === FAQ 아코디언 ===

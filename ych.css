@@ -140,6 +140,13 @@ section > p:last-of-type{
     word-break: keep-all;
 }
 
+.lecture-title > h2 > span{
+    color: var(--color-hl);
+    font-size: var(--font-m);
+    font-weight: 500;
+    padding-right: 8px;
+}
+
 .lecture-desc {
     max-height: 0;
     overflow: hidden;
@@ -278,6 +285,10 @@ footer{
     --size-s: 32px;
     --size-xs: 18px;
     }
+
+    .lecture-title > h2 > span{
+    padding-right: 4px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -302,6 +313,10 @@ footer{
 }
 .footer-wrapper > p{
     margin-top: 14px;
+}
+
+.lecture-title > h2 > span{
+    padding-right: 2px;
 }
 
 
